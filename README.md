@@ -1,6 +1,6 @@
-# JS TEMPLATE
+# JS Recipe book on MongoDB
 
-This app will let you <WHAT DOES THIS DO>.
+This app will let you manage a recipe book with recipes, ingredients and authors.
 
 To install it you have to do the following:
 
@@ -9,7 +9,5 @@ To install it you have to do the following:
 3. Open the terminal and go to the folder where you extracted the release.
 4. Type `npm install`
 5. Type `npm start`
-
-<SOME TEXT ABOUT HOW TO PROCEED>
 
 <DOCUMENTATION>

@@ -1,0 +1,37 @@
+type Query {        
+    authorList: [Author!]!
+    recipeList: [Recipe!]!
+    ingredientList: [Ingredient!]!
+    authorRecipes(id: ID!): [Recipe!]!
+    ingredientRecipes(id: ID!): [Recipe!]!
+}
+type Recipe {
+    _id: ID!
+    title: String!
+    description: String!
+    date: String!
+    author: Author!
+    ingredients: [Ingredient!]!
+}
+type Ingredient {
+    _id: ID!
+    name: String!
+    recipes_used: [Recipe!]!
+}
+type Author {
+    _id: ID!
+    name: String!
+    email: String!
+    recipes_made: [Recipe!]!
+}
+type Mutation {
+    addRecipe(title: String!, description: String!, author: ID!, ingredients: [ID!]!): Recipe!
+    addIngredient(name: String!): Ingredient!
+    addAuthor(name: String!, email: String!): Author!
+    removeRecipe(id: ID!): Recipe!
+    removeIngredient(id: ID!): Ingredient!
+    removeAuthor(id: ID!): Author!
+    updateRecipe(id: ID!, title: String!, description: String!, author: ID!, ingredients: [ID!]!): Recipe!
+    updateIngredient(id: ID!, name: String!): Ingredient!
+    updateAuthor(id: ID!, name: String!, email: String!): Author!
+}
