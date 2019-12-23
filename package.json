@@ -1,7 +1,7 @@
 {
-  "name": "boiler_plate",
+  "name": "recipes_database",
   "version": "1.0.0",
-  "description": "",
+  "description": "This app will let you <WHAT DOES THIS DO>.",
   "main": "index.js",
   "scripts": {
     "build": "babel src --out-dir dist",
@@ -16,5 +16,18 @@
     "@babel/node": "^7.6.3",
     "@babel/preset-env": "^7.6.3",
     "nodemon": "^1.19.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheFallender/JS_P3_Recipes_DB.git"
+  },
+  "bugs": {
+    "url": "https://github.com/TheFallender/JS_P3_Recipes_DB/issues"
+  },
+  "homepage": "https://github.com/TheFallender/JS_P3_Recipes_DB#readme",
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "graphql-yoga": "^1.18.3",
+    "mongodb": "^3.4.1"
   }
 }
