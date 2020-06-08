@@ -11,3 +11,5 @@ To install it you have to do the following:
 5. Type `npm start`
 
 <DOCUMENTATION>
+
+# DO NOT BOTHER USING THE USERNAME AND PASSWORD FOR THAT CLUSTER, IT WON'T WORK
